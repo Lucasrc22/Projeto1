@@ -16,8 +16,8 @@ private static final Departamento deptoExatas = new Departamento("Departamento d
         coordenador.addCursoCoord(cursoEnf);
         coordenador.addCursoCoord(cursoQuim);
 
-        Alocacao alocacao = new Alocacao(professorJoao, cursoCc, "Quarta-feira", "19 horas");
-        Alocacao alocacao2 = new Alocacao(professorJandyson,cursoQuim, "Sexta-feira", "14 horas");
+        Alocacao alocacao = new Alocacao(professorJoao, cursoCc, null, 0);
+        Alocacao alocacao2 = new Alocacao(professorJandyson,cursoQuim, null, 0);
         System.out.println(alocacao);
         System.out.println(alocacao2);
 
