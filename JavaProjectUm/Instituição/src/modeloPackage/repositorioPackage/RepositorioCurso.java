@@ -1,7 +1,6 @@
 package repositorioPackage;
 import java.util.ArrayList;
 
-import javax.naming.spi.DirStateFactory.Result;
 
 import modeloPackage.Area;
 import modeloPackage.Curso;
