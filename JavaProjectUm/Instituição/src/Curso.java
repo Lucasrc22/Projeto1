@@ -2,8 +2,8 @@ public class Curso implements TemSigla{
     private String nome;
     private String sigla;
     private Departamento departamento;
-    public Curso(String nome, String sigla, Departamento departamento){
-        this.nome= nome;
+    public Curso(String nome, String sigla, Departamento departamento)throws Exception{
+        setNome(nome);
         this.sigla = sigla;
         this.departamento = departamento;
     }
@@ -17,8 +17,12 @@ public class Curso implements TemSigla{
     public String getSigla(){
         return this.sigla;
     }
-    public void setSigla(String sigla){
-        this.sigla= sigla;
+    public void setSigla(String sigla) throws Exception{
+        if(sigla != null && sigla.length() >= 1){
+            this.sigla = sigla;
+        }else{
+            throw new Exception("O nome deve ter pelo menos dois caracteres");
+        }
     }
     public Departamento getDepartamento(){
         return this.departamento;

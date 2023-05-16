@@ -2,16 +2,19 @@ public class Departamento implements TemSigla{
     private String nome;
     private String sigla;
     private Area area;
-    Departamento(String nome, Area area, String sigla){
-        this.nome = nome;
+    Departamento(String nome, Area area, String sigla) throws Exception{
+        setNome(nome);;
         this.area = area;
         this.sigla = sigla;
     }
-    String getNome(){
+    public String getNome(){
         return this.nome;
     }
-    void setNome(String nome){
+    public void setNome(String nome) throws Exception{
+        NomeUtils.validarNome(nome);
+
         this.nome = nome;
+        
     }
     public Area getArea() {
         return area;
