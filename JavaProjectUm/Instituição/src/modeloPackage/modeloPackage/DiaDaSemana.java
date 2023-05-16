@@ -1,3 +1,5 @@
+package modeloPackage;
+
 public enum DiaDaSemana implements TemAbreviacao {
     Segunda(1, "seg"),
     Terca(2, "ter"),

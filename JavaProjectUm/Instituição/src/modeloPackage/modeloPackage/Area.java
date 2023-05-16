@@ -1,3 +1,5 @@
+package modeloPackage;
+
 public enum Area {
     BIOLOGICAS,
     EXATAS,

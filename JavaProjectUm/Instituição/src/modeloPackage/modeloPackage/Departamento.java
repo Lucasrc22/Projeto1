@@ -1,3 +1,5 @@
+package modeloPackage;
+
 public class Departamento implements TemSigla{
     private String nome;
     private String sigla;

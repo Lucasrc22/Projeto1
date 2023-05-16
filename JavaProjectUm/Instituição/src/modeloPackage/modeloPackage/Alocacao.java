@@ -1,3 +1,5 @@
+package modeloPackage;
+
 public class Alocacao {
     private Professor professor;
     private Curso curso;

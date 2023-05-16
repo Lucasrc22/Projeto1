@@ -1,3 +1,4 @@
+package modeloPackage;
 import java.util.ArrayList;
 
 public class Coordenador extends Professor{
