@@ -1,5 +1,7 @@
 package negocioPackage;
 
+import java.util.ArrayList;
+
 import modeloPackage.NegocioException;
 import modeloPackage.Professor;
 import repositorioPackage.RepositorioProfessor;
@@ -45,5 +47,9 @@ public class NegocioProfessor {
                 }
             }
         }
+    }
+
+    public ArrayList<Professor> consultarTodos() {
+        return null;
     }
 }

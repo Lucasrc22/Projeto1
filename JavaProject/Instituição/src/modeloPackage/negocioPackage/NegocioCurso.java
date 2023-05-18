@@ -43,4 +43,10 @@ public class NegocioCurso {
     public void removeItem(Curso item){
         repositorio.removerItem(item);
     }
+
+    public Object consultarTodos() {
+        return null;
+    }
+
+    
 }

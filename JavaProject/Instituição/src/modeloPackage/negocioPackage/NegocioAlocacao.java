@@ -1,10 +1,10 @@
 package negocioPackage;
-import java.time.DayOfWeek;
+
 import java.util.ArrayList;
 import modeloPackage.Alocacao;
-import modeloPackage.Curso;
+
 import modeloPackage.NegocioException;
-import modeloPackage.Professor;
+
 import repositorioPackage.RepositorioAlocacao;
 public class NegocioAlocacao {
     private RepositorioAlocacao repositorio;
