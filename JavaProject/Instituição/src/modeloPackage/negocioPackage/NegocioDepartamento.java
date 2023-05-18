@@ -42,4 +42,8 @@ public class NegocioDepartamento {
     public ArrayList<Departamento> consultarArea(Area area){
         return repositorio.consultarPorArea(area);
     }
+
+    public Object consultarTodos() {
+        return null;
+    }
 }
