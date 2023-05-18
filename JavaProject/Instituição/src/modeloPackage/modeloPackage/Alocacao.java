@@ -4,8 +4,8 @@ public class Alocacao {
     private Professor professor;
     private Curso curso;
     private DiaDaSemana diaDaSemana;
-    private int hora;
-    public Alocacao(Professor professor, Curso curso, DiaDaSemana diaDaSemana, int hora){
+    private String hora;
+    public Alocacao(Professor professor, Curso curso, DiaDaSemana diaDaSemana, String hora){
         this.professor = professor;
         this.curso = curso;
         this.diaDaSemana = diaDaSemana;
@@ -31,10 +31,10 @@ public class Alocacao {
     public void setDiaDaSemana(DiaDaSemana diaDaSemana) {
         this.diaDaSemana = diaDaSemana;
     }
-    public int getHora() {
+    public String getHora() {
         return hora;
     }
-    public void setHora(int hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
     

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import modeloPackage.Alocacao;
 import modeloPackage.Curso;
 import modeloPackage.Departamento;
+import modeloPackage.DiaDaSemana;
 import modeloPackage.Professor;
 public class RepositorioAlocacao extends RepositorioGenerico<Alocacao> {
     public ArrayList<Alocacao> consultarPorDepartamento(Departamento depto){
@@ -33,6 +34,16 @@ public class RepositorioAlocacao extends RepositorioGenerico<Alocacao> {
             if(alocacao.getProfessor().equals(prof) && alocacao.getCurso().equals(curso)){
                 resultado = alocacao;
                 break;
+            }
+        }
+        return resultado;
+    }
+
+    public ArrayList<Alocacao> consultaPorProfessorEDiaDaSemana(Professor professor, DiaDaSemana diaDaSemana) {
+        ArrayList<Alocacao> resultado = new ArrayList<Alocacao>();
+        for(Alocacao alocacao: colecao){
+            if(alocacao.getProfessor().equals(professor) && alocacao.getDiaDaSemana().equals(diaDaSemana)){
+                resultado.add(alocacao);
             }
         }
         return resultado;
