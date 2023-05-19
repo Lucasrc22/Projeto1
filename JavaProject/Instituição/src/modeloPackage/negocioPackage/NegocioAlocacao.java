@@ -51,5 +51,9 @@ public class NegocioAlocacao {
         return null;
     }
 
+    public ArrayList<Alocacao> consultarPorCurso(Curso aRemover) {
+        return null;
+    }
+
     
 }

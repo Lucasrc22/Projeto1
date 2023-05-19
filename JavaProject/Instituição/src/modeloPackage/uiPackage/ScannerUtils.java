@@ -6,8 +6,10 @@ import java.util.Scanner;
 import modeloPackage.Area;
 import modeloPackage.Curso;
 import modeloPackage.Departamento;
+import modeloPackage.Professor;
 import negocioPackage.NegocioCurso;
 import negocioPackage.NegocioDepartamento;
+import negocioPackage.NegocioProfessor;
 
 public class ScannerUtils {
     private static Scanner scanner;
@@ -67,6 +69,14 @@ public class ScannerUtils {
     }
 
     public static Curso pedirCurso(ArrayList<Curso> cursos){
+        return null;
+    }
+
+    public static Professor pedirProfessor() {
+        return pedirProfessor(NegocioProfessor.getInstancia().consultarTodos());
+    }
+
+    private static Professor pedirProfessor(ArrayList<Professor> consultarTodos) {
         return null;
     }
 }

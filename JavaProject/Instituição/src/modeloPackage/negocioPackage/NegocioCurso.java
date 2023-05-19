@@ -5,6 +5,7 @@ import modeloPackage.Alocacao;
 import modeloPackage.Curso;
 import modeloPackage.Departamento;
 import modeloPackage.NegocioException;
+import modeloPackage.Professor;
 import repositorioPackage.RepositorioCurso;
 public class NegocioCurso {
     private RepositorioCurso repositorio;
@@ -51,6 +52,10 @@ public class NegocioCurso {
     }
 
     public ArrayList<Alocacao> consultarPorDepartamento(Departamento aRemover) {
+        return null;
+    }
+
+    public ArrayList<Alocacao> consultarPorProfessorECurso(Professor aRemover) {
         return null;
     }
 

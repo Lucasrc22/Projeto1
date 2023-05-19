@@ -58,18 +58,43 @@ public class Remocao {
 
     private static void removerProfessor(){
         Professor aRemover = ScannerUtils.pedirProfessor();
+        if(aRemover == null){
+            System.out.println("Não há cursos cadastrados");
+            return;
+        }
+        if(NegocioCurso.getInstancia().consultarPorProfessorECurso(aRemover).size()>0){
+            System.out.println("Não é possível remover o professor pois há cursos associados");
+            return;
+
+        }else if(NegocioDepartamento.getInstancia().consultarPorProfessorEDepartamento(aRemover).size()>0){
+            System.out.println("Não é possível remover o professor pois há departamentos associados");
+            return;
+        }
+        System.out.println(aRemover);
+        String confirmacao = ScannerUtils.pedirString("Tem certeza que deseja remover esse departamento?  ");
+        if(confirmacao == "S"){
+            NegocioProfessor.getInstancia().removeItem(aRemover);
+            System.out.println("Departamento removida com sucesso");
+        }else{
+            System.out.println("Operação cancelada");
+        }
     }
+    
     private static void removerCurso(){
         Curso aRemover = ScannerUtils.pedirCurso();
         if(aRemover == null){
             System.out.println("Não há cursos cadastrados");
             return;
+        }
         if(NegocioAlocacao.getInstancia().consultarPorCurso(aRemover).size()>0){
             System.out.println("Não é possível remover o curso pois há departamentos associados");
+            return;
         }else if(NegocioProfessor.getInstancia().consultarPorDepartamentoECurso(aRemover).size()>0){
             System.out.println("Não é possível remover o departamento pois há cursos associados");
             return;
         }
+        
+        
         System.out.println(aRemover);
         String confirmacao = ScannerUtils.pedirString("Tem certeza que deseja remover esse departamento?  ");
         if(confirmacao == "S"){
@@ -78,8 +103,8 @@ public class Remocao {
         }else{
             System.out.println("Operação cancelada");
         }
-        
     }
+    
     private static void removerDepartamento(){
         Departamento aRemover = ScannerUtils.pedirDepartamento();
         if(aRemover == null){
