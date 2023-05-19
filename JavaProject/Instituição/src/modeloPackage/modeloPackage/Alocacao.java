@@ -1,14 +1,16 @@
 package modeloPackage;
 
+import java.time.DayOfWeek;
+
 public class Alocacao {
     private Professor professor;
     private Curso curso;
     private DiaDaSemana diaDaSemana;
     private String hora;
-    public Alocacao(Professor professor, Curso curso, DiaDaSemana diaDaSemana, String hora){
+    public Alocacao(Professor professor, Curso curso, DiaDaSemana dia, String hora){
         this.professor = professor;
         this.curso = curso;
-        this.diaDaSemana = diaDaSemana;
+        this.diaDaSemana = dia;
         this.hora = hora;
     }
     public Alocacao() {

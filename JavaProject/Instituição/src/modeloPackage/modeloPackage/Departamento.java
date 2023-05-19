@@ -4,7 +4,7 @@ public class Departamento implements TemSigla{
     private String nome;
     private String sigla;
     private Area area;
-    Departamento(String nome, Area area, String sigla) throws Exception{
+    public Departamento(String nome, Area area, String sigla) throws Exception{
         setNome(nome);;
         this.area = area;
         this.sigla = sigla;
