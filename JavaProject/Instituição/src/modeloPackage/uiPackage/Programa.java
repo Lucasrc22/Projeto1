@@ -40,27 +40,28 @@ public class Programa {
         return ScannerUtils.pedirInt("Digite a opção desejada: ");
     }
 
-    private static void processarOpcaoCadastro(){
+    private static void processarOpcaoCadastro() {
         System.out.println("\nO que você deseja cadastrar? ");
-
+    
         int opcao = imprimirSubMenuGenerico();
-        if(opcao ==0){
-            return;
-        }else{
+        if (opcao == 0) {
+            System.out.println("Opção inválida");// Opção inválida
+        } else {
             Consulta.processarConsulta(opcao);
         }
         System.out.println("Só devia rodar no else");
-        return;
+        opcao = ScannerUtils.pedirInt("Digite a opção desejada");
     }
-
-    private static void processarOpcaoRemocao(){
+    
+    private static void processarOpcaoRemocao() {
         System.out.println("\nO que você deseja remover? ");
-        int opcao=imprimirSubMenuGenerico();
-        if(opcao == 0){
-            return;
-        }else{
+        int opcao = imprimirSubMenuGenerico();
+        if (opcao == 0) {
+            System.out.println("Opção inválida");// Opção inválida
+        } else {
             Remocao.processarRemocao(opcao);
         }
-
+        opcao = ScannerUtils.pedirInt("Digite a opção desejada");
     }
+    
 }
