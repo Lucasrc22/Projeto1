@@ -50,6 +50,7 @@ public class Programa {
             Consulta.processarConsulta(opcao);
         }
         System.out.println("Só devia rodar no else");
+        return;
     }
 
     private static void processarOpcaoRemocao(){
