@@ -44,7 +44,7 @@ public class NegocioCurso {
         repositorio.removerItem(item);
     }
 
-    public Object consultarTodos() {
+    public ArrayList<Curso> consultarTodos() {
         return null;
     }
 

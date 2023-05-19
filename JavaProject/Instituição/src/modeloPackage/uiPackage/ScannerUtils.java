@@ -6,6 +6,7 @@ import java.util.Scanner;
 import modeloPackage.Area;
 import modeloPackage.Curso;
 import modeloPackage.Departamento;
+import modeloPackage.Professor;
 import negocioPackage.NegocioCurso;
 import negocioPackage.NegocioDepartamento;
 
@@ -46,7 +47,7 @@ public class ScannerUtils {
         return pedirDepartamento(NegocioDepartamento.getInstancia().consultarTodos());
     }
 
-    private static Departamento pedirDepartamento(ArrayList<Departamento> deptos) {
+    static Departamento pedirDepartamento(ArrayList<Departamento> deptos) {
         if(deptos == null || deptos.size()==0) return null;
 
         System.out.println("Departamentos disponíveis: \nCódigo - Nome (Sigla)");
@@ -67,6 +68,11 @@ public class ScannerUtils {
     }
 
     public static Curso pedirCurso(ArrayList<Curso> cursos){
+        return null;
         
+    }
+
+    public static Professor pedirProfessor(ArrayList<Professor> todosProfessores) {
+        return null;
     }
 }

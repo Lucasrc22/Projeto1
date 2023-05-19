@@ -43,7 +43,7 @@ public class NegocioDepartamento {
         return repositorio.consultarPorArea(area);
     }
 
-    public Object consultarTodos() {
+    public ArrayList<Departamento> consultarTodos() {
         return null;
     }
 }
