@@ -1,7 +1,9 @@
 package negocioPackage;
 import java.util.ArrayList;
 
+import modeloPackage.Alocacao;
 import modeloPackage.Curso;
+import modeloPackage.Departamento;
 import modeloPackage.NegocioException;
 import repositorioPackage.RepositorioCurso;
 public class NegocioCurso {
@@ -45,6 +47,10 @@ public class NegocioCurso {
     }
 
     public ArrayList<Curso> consultarTodos() {
+        return null;
+    }
+
+    public ArrayList<Alocacao> consultarPorDepartamento(Departamento aRemover) {
         return null;
     }
 
