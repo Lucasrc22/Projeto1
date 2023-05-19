@@ -46,4 +46,7 @@ public class NegocioDepartamento {
     public ArrayList<Departamento> consultarTodos() {
         return null;
     }
+
+    public void removeItem(Departamento aRemover) {
+    }
 }

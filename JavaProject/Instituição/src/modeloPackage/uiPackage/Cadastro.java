@@ -18,13 +18,13 @@ public class Cadastro {
                 cadastrarDepartamento();
                 break;
             case 2:
-                cadastrarDepartamento();
+                cadastrarCurso();
                 break;
             case 3:
-                cadastrarDepartamento();
+                cadastrarProfessor();
                 break;
             case 4:
-                cadastrarDepartamento();
+                cadastrarAlocacao();
                 break;
         }
     }
@@ -108,6 +108,5 @@ public class Cadastro {
             System.out.println("Erro ao cadastrar o departamento "+e.getMessage()+"\n\n");
         }
     }
-    private static void pedirDiaDaSemana() {
-    }
+    
 }
